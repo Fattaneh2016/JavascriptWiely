@@ -2,10 +2,31 @@
 <html>
 <head>
 <title>My first JavaScript program</title>
+    <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+    <script type="text/javascript">
+
+        
+            $(document).ready(function ()
+            {
+                $('p').click(function ()
+                {
+                    $(this).hide();
+                });
+            });
+
+            /* var $version_name = "my serial number is 6te839";
+            alert('You clicked the button '+ $version_name );
+            alert('This is fattaneh ' + $version_name )*/
+       
+    </script>
 </head>
 <body>
     <h1>My first JavaScript program</h1>
 <p>This is text.
-    <button type = 'button' onclick = "alert('You clicked the button');">I'm a button; click me</button>
+   <!-- <button type = 'button' onclick = "alert('You clicked the button');alert('This is fattaneh');">I'm a button; click me</button>-->
+    <button type = 'button' onclick = "my_sample();">I'm a button; click me</button>
+
+    <p>This is the frst paragraph</p>
+    <p>this is the second paragraph</p>
 </body>
 </html>
